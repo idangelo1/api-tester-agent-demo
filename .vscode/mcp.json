@@ -1,0 +1,52 @@
+{
+	"servers": {
+		"playwright": {
+			"type": "stdio",
+			"command": "npx",
+			"args": [
+				"@playwright/mcp@latest"
+			]
+		},
+		"postman": {
+			"type": "http",
+			"url": "https://mcp.postman.com/mcp",
+			"headers": {
+				"Authorization": "Bearer ${input:postman-api-key}"
+			}
+		},
+		"mcp-atlassian": {
+			"type": "stdio",
+			"command": "uvx",
+			"args": ["mcp-atlassian"],
+			"env": {
+				"JIRA_URL": "https://andreani.atlassian.net",
+				"JIRA_USERNAME": "idangelo@andreani.com",
+				"JIRA_API_TOKEN": "${input:atlassian-api-key}"
+			}
+		},
+		"agent365-odspremoteserver": {
+			"type": "http",
+			"url": "https://agent365.svc.cloud.microsoft/agents/tenants/${input:tenant_id}/servers/mcp_ODSPRemoteServer"
+		}
+	},
+	"inputs": [
+		{
+			"id": "atlassian-api-key",
+			"type": "promptString",
+			"description": "Atlassian API key",
+			"password": true
+		},
+		{
+			"id": "postman-api-key",
+			"type": "promptString",
+			"description": "Enter Postman API key",
+			"password": true
+		},
+		{
+			"id": "tenant_id",
+			"type": "promptString",
+			"description": "Microsoft Entra Tenant ID",
+			"password": true
+		}
+	]
+}

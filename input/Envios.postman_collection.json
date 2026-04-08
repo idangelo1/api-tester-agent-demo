@@ -1,0 +1,271 @@
+{
+  "info": {
+    "_postman_id": "288a12d8-6216-483a-afc5-b00ffa05dcf0",
+    "name": "Envios",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "14550668"
+  },
+  "item": [
+    {
+      "name": "Alta de Envio APIODE QA",
+      "event": [
+        {
+          "script": {
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          },
+          "listen": "test"
+        },
+        {
+          "script": {
+            "exec": [
+              "// Pre-request: no se requieren acciones adicionales para esta solicitud"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          },
+          "listen": "prerequest"
+        }
+      ],
+      "protocolProfileBehavior": {
+        "followRedirects": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Cookie",
+            "value": "60bd27fe9c81a15e11372fd76131481e=105acb781b8c7e7af0905eaf8b518703"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"contrato\": \"351002270\",//351002270\n    \"tiposervicio\": \"\",\n    \"sucursalclienteid\": 0,\n    \"origen\": {\n        \"postal\": {\n            \"codigopostal\": \"1648\",\n            \"calle\": \"Av. del Libertador Gral. San Martin\",\n            \"numero\": \"265\",\n            \"localidad\": \"Tigre\",\n            \"piso\": \"\",\n            \"departamento\": \"\",\n            \"region\": \"Buenos Aires\",\n            \"país\": \"Argentina\",\n            \"casilladecorreo\": \"\",\n            \"componentesdedireccion\": [\n                {\n                    \"meta\": \"Observaciones\",\n                    \"contenido\": \"Prueba 1\"\n                }\n            ]\n        },\n        \"sucursal\": {\n            \"id\": \"\",\n            \"nomenclatura\": \"\",\n            \"descripcion\": \"\",\n            \"direccion\": {\n                \"codigopostal\": \"\",\n                \"calle\": \"\",\n                \"numero\": \"\",\n                \"localidad\": \"\",\n                \"piso\": \"\",\n                \"departamento\": \"\",\n                \"region\": \"\",\n                \"pais\": \"\",\n                \"casilladecorreo\": \"\",\n                \"componentesdedireccion\": [\n                    {\n                        \"meta\": \"Observaciones\",\n                        \"contenido\": \"Prueba 2\"\n                    }\n            ]\n            },\n            \"telefonos\": {\n                \"telefono\": null\n            },\n            \"datosadicionales\": {\n                \"metadatos\": null\n            }\n        },\n        \"coordenadas\": {\n            \"elevacion\": 0,\n            \"latitud\": -34.4314333,\n            \"longitud\": -58.691828,\n            \"poligono\": 0\n        }\n    },\n    \"destino\": {\n        \"postal\": {\n            \"codigopostal\": \"1870\",\n            \"calle\": \"Av. Pienovi\",\n            \"numero\": \"104\",\n            \"localidad\": \"Avellaneda\",\n            \"piso\": \"\",\n            \"departamento\": \"\",\n            \"region\": \"Provincia de Buenos Aires\",\n            \"pais\": \"Argentina\",\n            \"casilladecorreo\": \"\",\n            \"componentesdedireccion\": [\n                {\n                    \"meta\": \"Observaciones\",\n                    \"contenido\": \"Prueba 3\"\n                }\n            ]\n        },\n        \"sucursal\": {\n            \"id\": \"\",\n            \"nomenclatura\": \"\",\n            \"descripcion\": \"\",\n            \"direccion\": {\n                \"codigopostal\": \"\",\n                \"calle\": \"\",\n                \"numero\": \"\",\n                \"localidad\": \"\",\n                \"piso\": \"\",\n                \"departamento\": \"\",\n                \"region\": \"\",\n                \"pais\": \"\",\n                \"casilladecorreo\": \"\",\n                \"componentesdedireccion\": [\n                    {\n                        \"meta\": \"Observaciones\",\n                        \"contenido\": \"Prueba 4\"\n                    }\n            ]\n            },\n            \"telefonos\": {\n                \"telefono\": null\n            },\n            \"datosadicionales\": {\n                \"metadatos\": null\n            }\n        },\n        \"coordenadas\": {\n            \"elevacion\": 0,\n            \"latitud\": 34.6657093,\n            \"longitud\": -58.395423,\n            \"poligono\": 0\n        }\n    },\n    \"idpedido\": \"\",\n    \"remitente\": {\n        \"nombrecompleto\": \"Janis Bernhard II\",\n        \"email\": \"remitente@hotmail.com\",\n        \"documentotipo\": \"CUIT\",\n        \"documentonumero\": \"1111111\",\n        \"telefonos\": []\n    },\n    \"destinatario\": [\n        {\n            \"nombrecompleto\": \"Ivan Manuel D'angelo\",\n            \"email\": \"idangelo@andreani.com\",\n            \"documentotipo\": \"CUIT\",\n            \"documentonumero\": \"22222\",\n            \"telefonos\": [\n                {\n                    \"tipo\": 2,\n                    \"numero\": \"4444-5555\"\n                }\n            ]\n        }\n    ],\n    \"remito\": {\n        \"numeroremito\": \"REM50869\",\n        \"complementarios\": null\n    },\n    \"centrodecostos\": \"\",\n    \"productoaentregar\": \"\",\n    \"productoaretirar\": \"\",\n    \"tipoproducto\": \"\",\n    \"categoriafacturacion\": \"\",\n    \"pagodestino\": null,\n    \"valoracobrar\": 1000,\n    \"fechaentrega\": {\n        \"fecha\": \"\",\n        \"horadesde\": \"\",\n        \"horahasta\": \"\"\n    },\n    \"codigoverificadordeentrega\": \"\",\n    \"bultos\": [\n        {\n            \"kilos\": 1,\n            \"largocm\": 20,\n            \"altocm\": 20,\n            \"anchocm\": 20,\n            \"volumencm3\": 1,\n            \"valordeclaradosinimpuestos\": 2000000,\n            \"valordeclaradoconimpuestos\": 0,\n            \"descripcion\": \"Heladera de Fravega\",\n            \"referencias\": [\n                {\n                    \"meta\": \"idCliente\",\n                    \"contenido\": \"\"\n                },\n                {  \n                     \"meta\": \"observaciones\",   \n                     \"contenido\": \"con freezer\" \n                }\n            ],\n            \"numerodeenvio\": \"\",\n            \"valordeclarado\": 0,\n            \"componentes\": {\n                \"numeroAgrupador\": \"\",\n                \"componentesHijos\": []\n            },\n            \"ean\": \"\"\n        }\n    ],\n    \"pagopendienteenmostrador\": false\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://alta-preenvios-api-apiode-qa.apps.ocpqa.andreani.com.ar/api/v1/AltaOrden",
+          "protocol": "https",
+          "host": [
+            "alta-preenvios-api-apiode-qa",
+            "apps",
+            "ocpqa",
+            "andreani",
+            "com",
+            "ar"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "AltaOrden"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "otros datos",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Cookie",
+                "value": "60bd27fe9c81a15e11372fd76131481e=105acb781b8c7e7af0905eaf8b518703"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"contrato\": \"351002665\",\n    \"tiposervicio\": \"\",\n    \"sucursalclienteid\": 0,\n    \"origen\": {\n        \"postal\": {\n            \"codigopostal\": \"1802\",\n            \"calle\": \"AU Tte Gral Pablo Riccheri KM. 33,5\",\n            \"numero\": \"0\",\n            \"localidad\": \"AEROPUERTO EZEIZA\",\n            \"piso\": \"\",\n            \"departamento\": \"\",\n            \"region\": \"Gba Sur\",\n            \"pais\": \"AR\",\n            \"casilladecorreo\": \"\",\n            \"componentesdedireccion\": []\n        },\n        \"sucursal\": {\n            \"id\": \"\",\n            \"nomenclatura\": \"\",\n            \"descripcion\": \"\",\n            \"direccion\": {\n                \"codigopostal\": \"\",\n                \"calle\": \"\",\n                \"numero\": \"\",\n                \"localidad\": \"\",\n                \"piso\": \"\",\n                \"departamento\": \"\",\n                \"region\": \"\",\n                \"pais\": \"\",\n                \"casilladecorreo\": \"\",\n                \"componentesdedireccion\": [\n                    {\n                        \"meta\": \"Observaciones\",\n                        \"contenido\": \"Prueba 2\"\n                    }\n            ]\n            },\n            \"telefonos\": {\n                \"telefono\": null\n            },\n            \"datosadicionales\": {\n                \"metadatos\": null\n            }\n        }\n    },\n    \"destino\": {\n        \"postal\": {\n            \"codigopostal\": \"1900\",\n            \"calle\": \"Avenida Principal\",\n            \"numero\": \"4600\",\n            \"localidad\": \"LA PLATA\",\n            \"piso\": \"\",\n            \"departamento\": \"\",\n            \"region\": \"Buenos Aires\",\n            \"pais\": \"ARG\",\n            \"casilladecorreo\": \"\",\n            \"componentesdedireccion\": [\n                {\n                    \"meta\": \"piso\",\n                    \"contenido\": \"1\"\n                },\n                {\n                    \"meta\": \"departamento\",\n                    \"contenido\": \"D\"\n                },\n                {\n                    \"meta\": \"Observaciones\",\n                    \"contenido\": \"Edificio blanco antes de la esquina\"\n                }\n            ]\n        },\n        \"sucursal\": {\n            \"id\": \"\",\n            \"nomenclatura\": \"\",\n            \"descripcion\": \"\",\n            \"direccion\": {\n                \"codigopostal\": \"\",\n                \"calle\": \"\",\n                \"numero\": \"\",\n                \"localidad\": \"\",\n                \"piso\": \"\",\n                \"departamento\": \"\",\n                \"region\": \"\",\n                \"pais\": \"\",\n                \"casilladecorreo\": \"\",\n                \"componentesdedireccion\": [\n                    {\n                        \"meta\": \"Observaciones\",\n                        \"contenido\": \"Prueba 4\"\n                    }\n            ]\n            },\n            \"telefonos\": {\n                \"telefono\": null\n            },\n            \"datosadicionales\": {\n                \"metadatos\": null\n            }\n        }\n    },\n    \"idpedido\": \"bg-test-tool-1223\",\n    \"remitente\": {\n        \"nombrecompleto\": \"Intercap S.R.L. - Resistencia\",\n        \"email\": \"ralvarenga@intercap.com.ar\",\n        \"documentotipo\": \"CUIT\",\n        \"documentonumero\": \"30644372045\",\n        \"telefonos\": [\n            {\n                \"tipo\": 1,\n                \"numero\": \"0362-4421130\"\n            }\n        ]\n    },\n    \"destinatario\": [\n        {\n            \"nombrecompleto\": \"DIAZ LEONARDO ANDRES\",\n            \"email\": \"zeta_motos@hotmail.com\",\n            \"documentotipo\": \"CUIT\",\n            \"documentonumero\": \"20313096824\",\n            \"telefonos\": [\n                {\n                    \"tipo\": 2,\n                    \"numero\": \"11111111\"\n                }\n            ]\n        }\n    ],\n    \"remito\": {\n        \"numeroremito\": \"RX0003205608\",\n        \"complementarios\": null\n    },\n    \"centrodecostos\": \"\",\n    \"productoaentregar\": \"\",\n    \"productoaretirar\": \"\",\n    \"tipoproducto\": \"\",\n    \"categoriafacturacion\": \"\",\n    \"pagodestino\": null,\n    \"valoracobrar\": 1000,\n    \"fechaentrega\": {\n        \"fecha\": \"\",\n        \"horadesde\": \"\",\n        \"horahasta\": \"\"\n    },\n    \"codigoverificadordeentrega\": \"\",\n    \"bultos\": [\n        {\n            \"kilos\": 0.06,\n            \"largocm\": 0,\n            \"altocm\": 0,\n            \"anchocm\": 0,\n            \"volumencm3\": 0.00006667,\n            \"valordeclaradosinimpuestos\": 519.3,\n            \"valordeclaradoconimpuestos\": 1838.35,\n            \"descripcion\": \"Heladera de Fravega\",\n            \"referencias\": [\n                {\n                    \"meta\": \"idCliente\",\n                    \"contenido\": \"bg-test-tool-1223\"\n                },\n                {  \n                     \"meta\": \"Observaciones\",   \n                     \"contenido\": \"El producto es frágil\" \n                }\n            ],\n            \"numerodeenvio\": \"\",\n            \"valordeclarado\": 0,\n            \"componentes\": {\n                \"numeroAgrupador\": \"\",\n                \"componentesHijos\": []\n            },\n            \"ean\": \"\"\n        }\n    ],\n    \"pagopendienteenmostrador\": false\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://alta-preenvios-api-apiode-qa.apps.ocpqa.andreani.com.ar/api/v1/AltaOrden",
+              "protocol": "https",
+              "host": [
+                "alta-preenvios-api-apiode-qa",
+                "apps",
+                "ocpqa",
+                "andreani",
+                "com",
+                "ar"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "AltaOrden"
+              ]
+            }
+          },
+          "_postman_previewlanguage": null,
+          "header": null,
+          "cookie": [],
+          "body": null
+        },
+        {
+          "name": "sin bultos",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Cookie",
+                "value": "60bd27fe9c81a15e11372fd76131481e=105acb781b8c7e7af0905eaf8b518703"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"contrato\": \"351002270\",//351002270\n    \"tiposervicio\": \"\",\n    \"sucursalclienteid\": 0,\n    \"origen\": {\n        \"postal\": {\n            \"codigopostal\": \"1888\",\n            \"calle\": \"Av. Gral. José de San Martín\",\n            \"numero\": \"2099\",\n            \"localidad\": \"Florencio Varela\",\n            \"piso\": \"\",\n            \"departamento\": \"\",\n            \"region\": \"Buenos Aires\",\n            \"pais\": \"Argentina\",\n            \"casilladecorreo\": \"\",\n            \"componentesdedireccion\": [\n                {\n                    \"meta\": \"Observaciones\",\n                    \"contenido\": \"Prueba 1\"\n                }\n            ]\n        },\n        \"sucursal\": {\n            \"id\": \"\",\n            \"nomenclatura\": \"\",\n            \"descripcion\": \"\",\n            \"direccion\": {\n                \"codigopostal\": \"\",\n                \"calle\": \"\",\n                \"numero\": \"\",\n                \"localidad\": \"\",\n                \"piso\": \"\",\n                \"departamento\": \"\",\n                \"region\": \"\",\n                \"pais\": \"\",\n                \"casilladecorreo\": \"\",\n                \"componentesdedireccion\": [\n                    {\n                        \"meta\": \"Observaciones\",\n                        \"contenido\": \"Prueba 2\"\n                    }\n            ]\n            },\n            \"telefonos\": {\n                \"telefono\": null\n            },\n            \"datosadicionales\": {\n                \"metadatos\": null\n            }\n        },\n        \"coordenadas\": {\n            \"elevacion\": 0,\n            \"latitud\": -34.4314333,\n            \"longitud\": -58.691828,\n            \"poligono\": 0\n        }\n    },\n    \"destino\": {\n        \"postal\": {\n            \"codigopostal\": \"1657\",\n            \"calle\": \"Av Bernabe Marquez\",\n            \"numero\": \"2521\",\n            \"localidad\": \"Pablo Podesta\",\n            \"piso\": \"\",\n            \"departamento\": \"\",\n            \"region\": \"Provincia de Buenos Aires\",\n            \"pais\": \"Argentina\",\n            \"casilladecorreo\": \"\",\n            \"componentesdedireccion\": [\n                {\n                    \"meta\": \"Observaciones\",\n                    \"contenido\": \"Prueba 3\"\n                }\n            ]\n        },\n        \"sucursal\": {\n            \"id\": \"\",\n            \"nomenclatura\": \"\",\n            \"descripcion\": \"\",\n            \"direccion\": {\n                \"codigopostal\": \"\",\n                \"calle\": \"\",\n                \"numero\": \"\",\n                \"localidad\": \"\",\n                \"piso\": \"\",\n                \"departamento\": \"\",\n                \"region\": \"\",\n                \"pais\": \"\",\n                \"casilladecorreo\": \"\",\n                \"componentesdedireccion\": [\n                    {\n                        \"meta\": \"Observaciones\",\n                        \"contenido\": \"Prueba 4\"\n                    }\n            ]\n            },\n            \"telefonos\": {\n                \"telefono\": null\n            },\n            \"datosadicionales\": {\n                \"metadatos\": null\n            }\n        },\n        \"coordenadas\": {\n            \"elevacion\": 0,\n            \"latitud\": 34.6657093,\n            \"longitud\": -58.395423,\n            \"poligono\": 0\n        }\n    },\n    \"idpedido\": \"\",\n    \"remitente\": {\n        \"nombrecompleto\": \"Janis Bernhard I\",\n        \"email\": \"remitente@hotmail.com\",\n        \"documentotipo\": \"CUIT\",\n        \"documentonumero\": \"1111111\",\n        \"telefonos\": []\n    },\n    \"destinatario\": [\n        {\n            \"nombrecompleto\": \"Ivan Manuel D'angelo\",\n            \"email\": \"idangelo@andreani.com\",\n            \"documentotipo\": \"CUIT\",\n            \"documentonumero\": \"22222\",\n            \"telefonos\": [\n                {\n                    \"tipo\": 2,\n                    \"numero\": \"\"\n                }\n            ]\n        }\n    ],\n    \"remito\": {\n        \"numeroremito\": \"REM50869\",\n        \"complementarios\": null\n    },\n    \"centrodecostos\": \"\",\n    \"productoaentregar\": \"\",\n    \"productoaretirar\": \"\",\n    \"tipoproducto\": \"\",\n    \"categoriafacturacion\": \"\",\n    \"pagodestino\": null,\n    \"valoracobrar\": 1000,\n    \"fechaentrega\": {\n        \"fecha\": \"\",\n        \"horadesde\": \"\",\n        \"horahasta\": \"\"\n    },\n    \"codigoverificadordeentrega\": \"\",\n    \"bultos\": [],\n    \"pagopendienteenmostrador\": false\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://alta-preenvios-api-apiode-qa.apps.ocpqa.andreani.com.ar/api/v1/AltaOrden",
+              "protocol": "https",
+              "host": [
+                "alta-preenvios-api-apiode-qa",
+                "apps",
+                "ocpqa",
+                "andreani",
+                "com",
+                "ar"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "AltaOrden"
+              ]
+            }
+          },
+          "_postman_previewlanguage": null,
+          "header": null,
+          "cookie": [],
+          "body": null
+        },
+        {
+          "name": "email invalido",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Cookie",
+                "value": "60bd27fe9c81a15e11372fd76131481e=105acb781b8c7e7af0905eaf8b518703"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"contrato\": \"351002270\",//351002270\n    \"tiposervicio\": \"\",\n    \"sucursalclienteid\": 0,\n    \"origen\": {\n        \"postal\": {\n            \"codigopostal\": \"1888\",\n            \"calle\": \"Av. Gral. José de San Martín\",\n            \"numero\": \"2099\",\n            \"localidad\": \"Florencio Varela\",\n            \"piso\": \"\",\n            \"departamento\": \"\",\n            \"region\": \"Buenos Aires\",\n            \"pais\": \"Argentina\",\n            \"casilladecorreo\": \"\",\n            \"componentesdedireccion\": [\n                {\n                    \"meta\": \"Observaciones\",\n                    \"contenido\": \"Prueba 1\"\n                }\n            ]\n        },\n        \"sucursal\": {\n            \"id\": \"\",\n            \"nomenclatura\": \"\",\n            \"descripcion\": \"\",\n            \"direccion\": {\n                \"codigopostal\": \"\",\n                \"calle\": \"\",\n                \"numero\": \"\",\n                \"localidad\": \"\",\n                \"piso\": \"\",\n                \"departamento\": \"\",\n                \"region\": \"\",\n                \"pais\": \"\",\n                \"casilladecorreo\": \"\",\n                \"componentesdedireccion\": [\n                    {\n                        \"meta\": \"Observaciones\",\n                        \"contenido\": \"Prueba 2\"\n                    }\n            ]\n            },\n            \"telefonos\": {\n                \"telefono\": null\n            },\n            \"datosadicionales\": {\n                \"metadatos\": null\n            }\n        },\n        \"coordenadas\": {\n            \"elevacion\": 0,\n            \"latitud\": -34.4314333,\n            \"longitud\": -58.691828,\n            \"poligono\": 0\n        }\n    },\n    \"destino\": {\n        \"postal\": {\n            \"codigopostal\": \"1657\",\n            \"calle\": \"Av Bernabe Marquez\",\n            \"numero\": \"2521\",\n            \"localidad\": \"Pablo Podesta\",\n            \"piso\": \"\",\n            \"departamento\": \"\",\n            \"region\": \"Provincia de Buenos Aires\",\n            \"pais\": \"Argentina\",\n            \"casilladecorreo\": \"\",\n            \"componentesdedireccion\": [\n                {\n                    \"meta\": \"Observaciones\",\n                    \"contenido\": \"Prueba 3\"\n                }\n            ]\n        },\n        \"sucursal\": {\n            \"id\": \"\",\n            \"nomenclatura\": \"\",\n            \"descripcion\": \"\",\n            \"direccion\": {\n                \"codigopostal\": \"\",\n                \"calle\": \"\",\n                \"numero\": \"\",\n                \"localidad\": \"\",\n                \"piso\": \"\",\n                \"departamento\": \"\",\n                \"region\": \"\",\n                \"pais\": \"\",\n                \"casilladecorreo\": \"\",\n                \"componentesdedireccion\": [\n                    {\n                        \"meta\": \"Observaciones\",\n                        \"contenido\": \"Prueba 4\"\n                    }\n            ]\n            },\n            \"telefonos\": {\n                \"telefono\": null\n            },\n            \"datosadicionales\": {\n                \"metadatos\": null\n            }\n        },\n        \"coordenadas\": {\n            \"elevacion\": 0,\n            \"latitud\": 34.6657093,\n            \"longitud\": -58.395423,\n            \"poligono\": 0\n        }\n    },\n    \"idpedido\": \"\",\n    \"remitente\": {\n        \"nombrecompleto\": \"Janis Bernhard I\",\n        \"email\": \"no-es-un-email\",\n        \"documentotipo\": \"CUIT\",\n        \"documentonumero\": \"1111111\",\n        \"telefonos\": []\n    },\n    \"destinatario\": [\n        {\n            \"nombrecompleto\": \"Ivan Manuel D'angelo\",\n            \"email\": \"idangelo@andreani.com\",\n            \"documentotipo\": \"CUIT\",\n            \"documentonumero\": \"22222\",\n            \"telefonos\": [\n                {\n                    \"tipo\": 2,\n                    \"numero\": \"\"\n                }\n            ]\n        }\n    ],\n    \"remito\": {\n        \"numeroremito\": \"REM50869\",\n        \"complementarios\": null\n    },\n    \"centrodecostos\": \"\",\n    \"productoaentregar\": \"\",\n    \"productoaretirar\": \"\",\n    \"tipoproducto\": \"\",\n    \"categoriafacturacion\": \"\",\n    \"pagodestino\": null,\n    \"valoracobrar\": 1000,\n    \"fechaentrega\": {\n        \"fecha\": \"\",\n        \"horadesde\": \"\",\n        \"horahasta\": \"\"\n    },\n    \"codigoverificadordeentrega\": \"\",\n    \"bultos\": [\n        {\n            \"kilos\": 1,\n            \"largocm\": 20,\n            \"altocm\": 20,\n            \"anchocm\": 20,\n            \"volumencm3\": 1,\n            \"valordeclaradosinimpuestos\": 2000000,\n            \"valordeclaradoconimpuestos\": 0,\n            \"descripcion\": \"Heladera de Fravega\",\n            \"referencias\": [\n                {\n                    \"meta\": \"idCliente\",\n                    \"contenido\": \"\"\n                },\n                {  \n                     \"meta\": \"observaciones\",   \n                     \"contenido\": \"con freezer\" \n                }\n            ],\n            \"numerodeenvio\": \"\",\n            \"valordeclarado\": 0,\n            \"componentes\": {\n                \"numeroAgrupador\": \"\",\n                \"componentesHijos\": []\n            },\n            \"ean\": \"\"\n        }\n    ],\n    \"pagopendienteenmostrador\": false\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://alta-preenvios-api-apiode-qa.apps.ocpqa.andreani.com.ar/api/v1/AltaOrden",
+              "protocol": "https",
+              "host": [
+                "alta-preenvios-api-apiode-qa",
+                "apps",
+                "ocpqa",
+                "andreani",
+                "com",
+                "ar"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "AltaOrden"
+              ]
+            }
+          },
+          "_postman_previewlanguage": null,
+          "header": null,
+          "cookie": [],
+          "body": null
+        },
+        {
+          "name": "dos bultos",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Cookie",
+                "value": "60bd27fe9c81a15e11372fd76131481e=105acb781b8c7e7af0905eaf8b518703"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"contrato\": \"351002270\",//351002270\n    \"tiposervicio\": \"\",\n    \"sucursalclienteid\": 0,\n    \"origen\": {\n        \"postal\": {\n            \"codigopostal\": \"1648\",\n            \"calle\": \"Av. del Libertador Gral. San Martin\",\n            \"numero\": \"265\",\n            \"localidad\": \"Tigre\",\n            \"piso\": \"\",\n            \"departamento\": \"\",\n            \"region\": \"Buenos Aires\",\n            \"país\": \"Argentina\",\n            \"casilladecorreo\": \"\",\n            \"componentesdedireccion\": [\n                {\n                    \"meta\": \"Observaciones\",\n                    \"contenido\": \"Prueba 1\"\n                }\n            ]\n        },\n        \"sucursal\": {\n            \"id\": \"\",\n            \"nomenclatura\": \"\",\n            \"descripcion\": \"\",\n            \"direccion\": {\n                \"codigopostal\": \"\",\n                \"calle\": \"\",\n                \"numero\": \"\",\n                \"localidad\": \"\",\n                \"piso\": \"\",\n                \"departamento\": \"\",\n                \"region\": \"\",\n                \"pais\": \"\",\n                \"casilladecorreo\": \"\",\n                \"componentesdedireccion\": [\n                    {\n                        \"meta\": \"Observaciones\",\n                        \"contenido\": \"Prueba 2\"\n                    }\n            ]\n            },\n            \"telefonos\": {\n                \"telefono\": null\n            },\n            \"datosadicionales\": {\n                \"metadatos\": null\n            }\n        },\n        \"coordenadas\": {\n            \"elevacion\": 0,\n            \"latitud\": -34.4314333,\n            \"longitud\": -58.691828,\n            \"poligono\": 0\n        }\n    },\n    \"destino\": {\n        \"postal\": {\n            \"codigopostal\": \"1870\",\n            \"calle\": \"Av. Pienovi\",\n            \"numero\": \"104\",\n            \"localidad\": \"Avellaneda\",\n            \"piso\": \"\",\n            \"departamento\": \"\",\n            \"region\": \"Buenos Aires\",\n            \"pais\": \"Argentina\",\n            \"casilladecorreo\": \"\",\n            \"componentesdedireccion\": [\n                {\n                    \"meta\": \"Observaciones\",\n                    \"contenido\": \"Prueba 3\"\n                }\n            ]\n        },\n        \"sucursal\": {\n            \"id\": \"\",\n            \"nomenclatura\": \"\",\n            \"descripcion\": \"\",\n            \"direccion\": {\n                \"codigopostal\": \"\",\n                \"calle\": \"\",\n                \"numero\": \"\",\n                \"localidad\": \"\",\n                \"piso\": \"\",\n                \"departamento\": \"\",\n                \"region\": \"\",\n                \"pais\": \"\",\n                \"casilladecorreo\": \"\",\n                \"componentesdedireccion\": [\n                    {\n                        \"meta\": \"Observaciones\",\n                        \"contenido\": \"Prueba 4\"\n                    }\n            ]\n            },\n            \"telefonos\": {\n                \"telefono\": null\n            },\n            \"datosadicionales\": {\n                \"metadatos\": null\n            }\n        },\n        \"coordenadas\": {\n            \"elevacion\": 0,\n            \"latitud\": 34.6657093,\n            \"longitud\": -58.395423,\n            \"poligono\": 0\n        }\n    },\n    \"idpedido\": \"\",\n    \"remitente\": {\n        \"nombrecompleto\": \"Janis Bernhard I\",\n        \"email\": \"remitente@hotmail.com\",\n        \"documentotipo\": \"CUIT\",\n        \"documentonumero\": \"1111111\",\n        \"telefonos\": []\n    },\n    \"destinatario\": [\n        {\n            \"nombrecompleto\": \"Ivan Manuel D'angelo\",\n            \"email\": \"idangelo@andreani.com\",\n            \"documentotipo\": \"CUIT\",\n            \"documentonumero\": \"22222\",\n            \"telefonos\": [\n                {\n                    \"tipo\": 2,\n                    \"numero\": \"\"\n                }\n            ]\n        }\n    ],\n    \"remito\": {\n        \"numeroremito\": \"REM50869\",\n        \"complementarios\": null\n    },\n    \"centrodecostos\": \"\",\n    \"productoaentregar\": \"\",\n    \"productoaretirar\": \"\",\n    \"tipoproducto\": \"\",\n    \"categoriafacturacion\": \"\",\n    \"pagodestino\": null,\n    \"valoracobrar\": 1000,\n    \"fechaentrega\": {\n        \"fecha\": \"\",\n        \"horadesde\": \"\",\n        \"horahasta\": \"\"\n    },\n    \"codigoverificadordeentrega\": \"\",\n    \"bultos\": [\n        {\n            \"kilos\": 1,\n            \"largocm\": 20,\n            \"altocm\": 20,\n            \"anchocm\": 20,\n            \"volumencm3\": 1,\n            \"valordeclaradosinimpuestos\": 2000000,\n            \"valordeclaradoconimpuestos\": 0,\n            \"descripcion\": \"Heladera de Fravega\",\n            \"referencias\": [\n                {\n                    \"meta\": \"idCliente\",\n                    \"contenido\": \"\"\n                },\n                {  \n                     \"meta\": \"observaciones\",   \n                     \"contenido\": \"con freezer\" \n                }\n            ],\n            \"numerodeenvio\": \"\",\n            \"valordeclarado\": 0,\n            \"componentes\": {\n                \"numeroAgrupador\": \"\",\n                \"componentesHijos\": []\n            },\n            \"ean\": \"\"\n        },\n        {\n            \"kilos\": 1,\n            \"largocm\": 3,\n            \"altocm\": 3,\n            \"anchocm\": 3,\n            \"volumencm3\": 1,\n            \"valordeclaradosinimpuestos\": 3000000,\n            \"valordeclaradoconimpuestos\": 0,\n            \"descripcion\": \"Heladera de Fravega\",\n            \"referencias\": [\n                {\n                    \"meta\": \"idCliente\",\n                    \"contenido\": \"\"\n                },\n                {  \n                     \"meta\": \"observaciones\",   \n                     \"contenido\": \"con freezer\" \n                }\n            ],\n            \"numerodeenvio\": \"\",\n            \"valordeclarado\": 0,\n            \"componentes\": {\n                \"numeroAgrupador\": \"\",\n                \"componentesHijos\": []\n            },\n            \"ean\": \"\"\n        }\n    ],\n    \"pagopendienteenmostrador\": false\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://alta-preenvios-api-apiode-qa.apps.ocpqa.andreani.com.ar/api/v1/AltaOrden",
+              "protocol": "https",
+              "host": [
+                "alta-preenvios-api-apiode-qa",
+                "apps",
+                "ocpqa",
+                "andreani",
+                "com",
+                "ar"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "AltaOrden"
+              ]
+            }
+          },
+          "_postman_previewlanguage": null,
+          "header": null,
+          "cookie": [],
+          "body": null
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "numeroDeEnvio",
+      "value": ""
+    }
+  ]
+}
