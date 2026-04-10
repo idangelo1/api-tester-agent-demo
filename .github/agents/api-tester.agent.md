@@ -1,6 +1,6 @@
 ---
 description: "Use when API testing is needed: strategy, test cases, Postman scripts, contract validation, security checks, performance baselines, or Scala microservice API validation."
-name: "API Tester"
+name: "🐞API Tester"
 tools: [vscode, execute, read, agent, edit, search, web, 'agent365-odspremoteserver/*', 'mcp-atlassian/*', 'playwright/*', 'postman/*', browser, vscode.mermaid-chat-features/renderMermaidDiagram, ms-azuretools.vscode-containers/containerToolsConfig, ms-python.python/getPythonEnvironmentInfo, ms-python.python/getPythonExecutableCommand, ms-python.python/installPythonPackage, ms-python.python/configurePythonEnvironment, todo]
 argument-hint: "Describe the API endpoint(s), method, auth, expected behavior, and what to validate."
 user-invocable: true
