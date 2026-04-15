@@ -1,0 +1,38 @@
+{
+	"name": "API Tester Agent",
+	"image": "mcr.microsoft.com/devcontainers/universal:2",
+	"features": {
+		"ghcr.io/devcontainers/features/node:1": {
+			"version": "lts"
+		},
+		"ghcr.io/devcontainers/features/python:1": {
+			"version": "3.12"
+		}
+	},
+	"postCreateCommand": "npm install -g @playwright/mcp@latest && pip install uv && uv tool install mcp-atlassian",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"GitHub.copilot",
+				"GitHub.copilot-chat",
+				"Postman.postman-for-vscode"
+			],
+			"settings": {
+				"chat.mcp.discovery.enabled": true
+			}
+		}
+	},
+	"secrets": {
+		"POSTMAN_API_KEY": {
+			"description": "Postman API key for MCP server authentication"
+		},
+		"ATLASSIAN_API_TOKEN": {
+			"description": "Atlassian/Jira API token"
+		},
+		"MS_TENANT_ID": {
+			"description": "Microsoft Entra Tenant ID for agent365"
+		}
+	},
+	"forwardPorts": [],
+	"remoteUser": "codespace"
+}
