@@ -1,6 +1,6 @@
 ---
 name: api-testing-specialist
-description: 'Structured API testing workflow. Use for API test strategy, contract validation, security review, performance baselines, Postman tests, or Scala microservice API tests.'
+description: 'Structured API testing workflow. Use for API test strategy, contract validation, security review, k6 load testing, performance baselines, Postman tests, or Scala microservice API tests.'
 argument-hint: 'Describe the API, contract, authentication, risks, and expected behavior.'
 user-invocable: true
 ---
@@ -13,7 +13,7 @@ user-invocable: true
 - Review REST, GraphQL, and webhook contracts.
 - Create or improve Postman test coverage.
 - Validate authentication, authorization, and input handling.
-- Define performance baselines and resilience checks.
+- Define performance baselines and resilience checks with k6 when load testing is required.
 - Generate ScalaTest + sttp coverage for Scala microservices.
 
 ## Workflow
@@ -46,9 +46,11 @@ user-invocable: true
 
 - Measure response time baselines.
 - Identify slow endpoints.
-- Test under simulated load.
+- Test under simulated load with k6 scripts and explicit scenarios.
 - Find concurrency issues.
 - Validate timeout handling.
+- Define and validate thresholds (for example p95 latency and error rate).
+- Export execution artifacts on every run: JSON summary (`--summary-export`) and HTML report (`K6_WEB_DASHBOARD=true` + `K6_WEB_DASHBOARD_EXPORT`).
 
 ### 5. Integration Testing
 
@@ -71,6 +73,7 @@ user-invocable: true
 - No critical security vulnerabilities left unreported.
 - Performance metrics compared against explicit baselines.
 - Integration flows checked for expected behavior and failure handling.
+- k6 executions generate traceable artifacts per run (timestamped JSON summary and HTML report).
 
 ## Example Prompts
 
@@ -79,4 +82,6 @@ user-invocable: true
 - Are there security vulnerabilities in this API design?
 - Test this API for backward compatibility with v1.
 - Help me set up automated API tests in our CI pipeline.
+- Generate a k6 script for this endpoint with ramp-up, duration, and thresholds.
+- Review and improve this k6 script for production-like load.
 - Generate ScalaTest + sttp tests for this microservice API.
